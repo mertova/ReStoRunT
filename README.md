@@ -1,7 +1,6 @@
 # ReStoRunT
 ReStoRunT: simple Recording, Storing, Re-Running and Tracing changes in Excel files⋆
-<<<<<<< HEAD
-=======
+
 
 ## ReStoRunT Python Tools
 
@@ -36,7 +35,8 @@ Take `ReStoRunT-TestSheet` from f.xslx and create a that contains just `ReStoRun
 `
 ApplyReStoRunTsheet --infile f.xslx --sheetfile g.xslx --destinationsheet "Sheet 2" --outfile o.xslx
 `
-Takes the first ReStoRunT sheet in the sheetfile (`g.xslx`) and applies it to the sheet `--destinationsheet` `Sheet 2`, and then writes out the result to the `--outfile o.xslx`
+Takes the first ReStoRunT sheet in the sheetfile (`g.xslx`) and applies it to the sheet `--destinationsheet` `Sheet 2`,
+and then writes out the result to the `--outfile o.xslx`
 
 ---
 ## Contributors
