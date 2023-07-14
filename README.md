@@ -38,6 +38,14 @@ ApplyReStoRunTsheet --infile f.xslx --sheetfile g.xslx --destinationsheet "Sheet
 Takes the first ReStoRunT sheet in the sheetfile (`g.xslx`) and applies it to the sheet `--destinationsheet` `Sheet 2`,
 and then writes out the result to the `--outfile o.xslx`
 
+### `RecursiveDiscoverReStoRunTbook.py`
+
+`
+RecursiveDiscoverReSto RunTbook.py --inrecording some_recording.xslx  --outbook some_book.xslx
+`
+
+Work is ongoing, don't use.
+
 ---
 ## Contributors
 ### <ins>Wolfgang Müller</ins>
