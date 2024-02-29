@@ -32,6 +32,7 @@ def fix_coordinate(in_coordinate):
         return "Could not parse: %s" % in_coordinate
 
 
+
 # copy all sheets
 for sheet in inbook:
     if not re.match(r'^ReStoRunT', sheet.title):
@@ -44,8 +45,9 @@ for sheet in inbook:
 
         for row in new_sheet.iter_rows():
             for cell in row:
-                new_sheet[cell.coordinate].value = "=%s!%s" % (
+                    qualified ="""%s!%s""" %  (
                     sheet.title, fix_coordinate(cell.coordinate))
+                    new_sheet[cell.coordinate].value = """=IF(%s="","",%s)""" % (qualified,qualified)
 
 # save the modified book to the outfile
 inbook.save(outfilename)
